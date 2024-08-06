@@ -62,39 +62,12 @@ public class CourseCatalogue extends AbstractComponents {
 		nextbutton.click();
 	}
 	
-//	public void findAndClickCourse(String courseName) throws InterruptedException {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//        boolean courseFound = false;
-//        
-//
-//        while (!courseFound) {
-//            List<WebElement> name = getCourseTitle();
-//            
-//            //nextbutton();
-//
-//            if (name == null) {
-//            	wait.until(ExpectedConditions.visibilityOf((WebElement) name));
-//                wait.until(ExpectedConditions.elementToBeClickable((By) name));
-//                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", name);
-//                nextbutton();
-//            } else {
-//                WebElement coursename = getCategoryName(courseName);
-//                if (coursename != null) {
-//                	wait.until(ExpectedConditions.visibilityOf(coursename));
-//                    wait.until(ExpectedConditions.elementToBeClickable(coursename));
-//                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", coursename);
-//                    coursename.click();
-//                    courseFound = true;
-//                    break;
-//                }
-//            }
-//        }
-//	
-//	}
+
 	
 	public void findAndClickCourse(String courseName) {
 	    boolean courseFound = false;
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	    while (!courseFound) {
 	        List<WebElement> courses = getCourseTitle();
@@ -108,9 +81,10 @@ public class CourseCatalogue extends AbstractComponents {
 	                wait.until(ExpectedConditions.elementToBeClickable(coursename));
 
 	                // Scroll to the element if necessary
-	                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", coursename);
+	                js.executeScript("arguments[0].scrollIntoView(true);", coursename);
 	                
-	                coursename.click();
+	                // Click using JavaScript to avoid interception
+	                js.executeScript("arguments[0].click();", coursename);
 	                courseFound = true;
 	            } else {
 	                // If course name is not found, navigate to the next page

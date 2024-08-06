@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="3" total="24" passed="13" failed="5" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T11:51:10 IST" name="Suite" finished-at="2024-07-30T11:52:17 IST" duration-ms="67067">
+  <suite started-at="2024-08-06T14:13:24 IST" name="Default suite" finished-at="2024-08-06T14:14:04 IST" duration-ms="40251">
     <groups>
-      <group name="ErrorValidation">
-        <method signature="FreeCourseEnroll.checkenrolledCourse()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" name="checkenrolledCourse" class="technosapeince.FreeCourseEnroll"/>
-        <method signature="FreeCourseEnroll.searchbar()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" name="searchbar" class="technosapeince.FreeCourseEnroll"/>
-        <method signature="FreeCourseEnroll.searchbardisplay()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" name="searchbardisplay" class="technosapeince.FreeCourseEnroll"/>
-      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2024-07-30T11:51:10 IST" name="TC_InstitutionLogin" finished-at="2024-07-30T11:52:08 IST" duration-ms="58248">
+    <test started-at="2024-08-06T14:13:24 IST" name="Default test" finished-at="2024-08-06T14:14:04 IST" duration-ms="40251">
       <class name="technosapeince.FreeCourseEnroll">
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:10 IST" name="launchapplication" finished-at="2024-07-30T11:51:14 IST" duration-ms="3900" status="PASS">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:24 IST" name="launchapplication" finished-at="2024-08-06T14:13:27 IST" duration-ms="2717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapplication -->
-        <test-method signature="checkenrolledCourse()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:14 IST" name="checkenrolledCourse" finished-at="2024-07-30T11:51:17 IST" duration-ms="3161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkenrolledCourse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:17 IST" name="tearDown" finished-at="2024-07-30T11:51:17 IST" duration-ms="185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:17 IST" name="launchapplication" finished-at="2024-07-30T11:51:21 IST" duration-ms="3176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="courseEnroll(java.util.HashMap)[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:21 IST" name="courseEnroll" data-provider="getData" finished-at="2024-07-30T11:51:33 IST" duration-ms="12234" status="PASS">
+        <test-method signature="courseEnroll(java.util.HashMap)[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:27 IST" name="courseEnroll" data-provider="getData" finished-at="2024-08-06T14:13:35 IST" duration-ms="8015" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -36,47 +19,28 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- courseEnroll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:33 IST" name="tearDown" finished-at="2024-07-30T11:51:33 IST" duration-ms="540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:33 IST" name="launchapplication" finished-at="2024-07-30T11:51:36 IST" duration-ms="2366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="courseEnroll(java.util.HashMap)[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:36 IST" name="courseEnroll" data-provider="getData" finished-at="2024-07-30T11:51:46 IST" duration-ms="10122" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{courseName=IT Support and Networking Essentials | IT Infrastructure, elist=IT Support and Networking Essentials, Category=Information Technology, SubCategory=IT Infrastructure, pwd=studentpassword, email=student@student.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Cancel']"}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element click intercepted: Element <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">...</button> is not clickable at point (567, 30). Other element would receive the click: <input aria-invalid="false" autocomplete="off" id=":r0:" placeholder="Search courses… exams... practice tests..." required="" type="search" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputTypeSearch MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-qflytl" aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value="">
+  (Session info: chrome=127.0.6533.89)
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb69357158e0430dea9a0c77685e45bf, findElement {value=//button[text()='Cancel'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51027/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb69357158e0430dea9a0c77685e45bf]]>
+Command: [8a47d160b8fed75d4f1d7c799de60961, clickElement {id=f.338FB0AE80A2F98F650FA6BE8D906F28.d.5364397109000422B4ED420A39B85A39.e.8824}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55400/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a47d160b8fed75d4f1d7c799de60961)] -> css selector: .plyr__control--overlaid]
+Session ID: 8a47d160b8fed75d4f1d7c799de60961]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Cancel']"}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">...</button> is not clickable at point (567, 30). Other element would receive the click: <input aria-invalid="false" autocomplete="off" id=":r0:" placeholder="Search courses… exams... practice tests..." required="" type="search" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputTypeSearch MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-qflytl" aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value="">
+  (Session info: chrome=127.0.6533.89)
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb69357158e0430dea9a0c77685e45bf, findElement {value=//button[text()='Cancel'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51027/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb69357158e0430dea9a0c77685e45bf
+Command: [8a47d160b8fed75d4f1d7c799de60961, clickElement {id=f.338FB0AE80A2F98F650FA6BE8D906F28.d.5364397109000422B4ED420A39B85A39.e.8824}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55400/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8a47d160b8fed75d4f1d7c799de60961)] -> css selector: .plyr__control--overlaid]
+Session ID: 8a47d160b8fed75d4f1d7c799de60961
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,15 +53,16 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at technosapeince.pageobjects.Homepage.clickCancelButton(Homepage.java:46)
-at technosapeince.FreeCourseEnroll.courseEnroll(FreeCourseEnroll.java:32)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at technosapeince.pageobjects.LearnCourse.playButton(LearnCourse.java:51)
+at technosapeince.FreeCourseEnroll.courseEnroll(FreeCourseEnroll.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,49 +79,62 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseEnroll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:46 IST" name="tearDown" finished-at="2024-07-30T11:51:47 IST" duration-ms="610" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:35 IST" name="tearDown" finished-at="2024-08-06T14:13:35 IST" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:47 IST" name="launchapplication" finished-at="2024-07-30T11:51:50 IST" duration-ms="3422" status="PASS">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:35 IST" name="launchapplication" finished-at="2024-08-06T14:13:37 IST" duration-ms="1656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapplication -->
-        <test-method signature="searchbar()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:51:50 IST" name="searchbar" finished-at="2024-07-30T11:52:02 IST" duration-ms="11344" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="courseEnroll(java.util.HashMap)[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:37 IST" name="courseEnroll" data-provider="getData" finished-at="2024-08-06T14:13:43 IST" duration-ms="6418" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{courseName=Cloud Infrastructure: | IT Infrastructure, elist=IT Support and Networking Essentials, Category=Information Technology, SubCategory=IT Infrastructure, pwd=studentpassword, email=student@student.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".css-1xvinid"}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element click intercepted: Element <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">...</button> is not clickable at point (567, 24). Other element would receive the click: <input aria-invalid="false" autocomplete="off" id=":r0:" placeholder="Search courses… exams... practice tests..." required="" type="search" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputTypeSearch MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-qflytl" aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value="">
+  (Session info: chrome=127.0.6533.89)
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [138fc44ef3b64e6476dd9278af23d4c7, findElement {value=.css-1xvinid, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51196/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 138fc44ef3b64e6476dd9278af23d4c7]]>
+Command: [2dbd8885fb4deb22e0e021c5075674b4, clickElement {id=f.2973C92C09DBC67BCAAD0DC5FB4FE2F6.d.1EB8F9A216CFEB76E662A8B4CBFA8265.e.11864}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55470/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2dbd8885fb4deb22e0e021c5075674b4)] -> css selector: .plyr__control--overlaid]
+Session ID: 2dbd8885fb4deb22e0e021c5075674b4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".css-1xvinid"}
-  (Session info: chrome=127.0.6533.73)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">...</button> is not clickable at point (567, 24). Other element would receive the click: <input aria-invalid="false" autocomplete="off" id=":r0:" placeholder="Search courses… exams... practice tests..." required="" type="search" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputTypeSearch MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-qflytl" aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false" role="combobox" value="">
+  (Session info: chrome=127.0.6533.89)
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [138fc44ef3b64e6476dd9278af23d4c7, findElement {value=.css-1xvinid, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51196/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 138fc44ef3b64e6476dd9278af23d4c7
+Command: [2dbd8885fb4deb22e0e021c5075674b4, clickElement {id=f.2973C92C09DBC67BCAAD0DC5FB4FE2F6.d.1EB8F9A216CFEB76E662A8B4CBFA8265.e.11864}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55470}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55470/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2dbd8885fb4deb22e0e021c5075674b4)] -> css selector: .plyr__control--overlaid]
+Session ID: 2dbd8885fb4deb22e0e021c5075674b4
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -169,15 +147,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-at technosapeince.pageobjects.Homepage.searchbartc_1(Homepage.java:114)
-at technosapeince.FreeCourseEnroll.searchbar(FreeCourseEnroll.java:111)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at technosapeince.pageobjects.LearnCourse.playButton(LearnCourse.java:51)
+at technosapeince.FreeCourseEnroll.courseEnroll(FreeCourseEnroll.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,571 +172,48 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchbar -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:52:02 IST" name="tearDown" finished-at="2024-07-30T11:52:04 IST" duration-ms="1838" status="PASS">
+        </test-method> <!-- courseEnroll -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:43 IST" name="tearDown" finished-at="2024-08-06T14:13:44 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:52:04 IST" name="launchapplication" finished-at="2024-07-30T11:52:08 IST" duration-ms="4005" status="PASS">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:44 IST" name="launchapplication" finished-at="2024-08-06T14:13:45 IST" duration-ms="1683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchapplication -->
-        <test-method signature="searchbardisplay()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:52:08 IST" name="searchbardisplay" finished-at="2024-07-30T11:52:08 IST" duration-ms="170" status="PASS">
+        <test-method signature="courseEnroll(java.util.HashMap)[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:13:45 IST" name="courseEnroll" data-provider="getData" finished-at="2024-08-06T14:14:04 IST" duration-ms="18824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{courseName=Fundamentals of IT Networking | IT Infrastructure, elist=IT Support and Networking Essentials, Category=Information Technology, SubCategory=IT Infrastructure, pwd=studentpassword, email=student@student.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchbardisplay -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@74bada02]" started-at="2024-07-30T11:52:08 IST" name="tearDown" finished-at="2024-07-30T11:52:08 IST" duration-ms="203" status="PASS">
+        </test-method> <!-- courseEnroll -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.FreeCourseEnroll@6e9175d8]" started-at="2024-08-06T14:14:04 IST" name="tearDown" finished-at="2024-08-06T14:14:04 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- technosapeince.FreeCourseEnroll -->
-    </test> <!-- TC_InstitutionLogin -->
-    <test started-at="2024-07-30T11:51:10 IST" name="TC_StudentLogin" finished-at="2024-07-30T11:52:17 IST" duration-ms="67067">
-      <class name="technosapeince.testcase.TestCase_Student_Login">
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:10 IST" name="launchapplication" finished-at="2024-07-30T11:51:14 IST" duration-ms="3894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:14 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:16 IST" duration-ms="1497" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage4(), password=studentpassword, email=student@student.com, expectedMessage=Signin Success. Your free trial period has ended}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:16 IST" name="tearDown" finished-at="2024-07-30T11:51:16 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:16 IST" name="launchapplication" finished-at="2024-07-30T11:51:18 IST" duration-ms="2254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:18 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:20 IST" duration-ms="1998" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage4(), password=studentpassword, email=STUDENT@STUDENT.COM, expectedMessage=Signin Success. Your free trial period has ended}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:20 IST" name="tearDown" finished-at="2024-07-30T11:51:21 IST" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:21 IST" name="launchapplication" finished-at="2024-07-30T11:51:23 IST" duration-ms="2460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:23 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:25 IST" duration-ms="1797" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage(), password=studentpassword, email=educator@student.com, expectedMessage=Invalid credentials}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:25 IST" name="tearDown" finished-at="2024-07-30T11:51:25 IST" duration-ms="254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:25 IST" name="launchapplication" finished-at="2024-07-30T11:51:28 IST" duration-ms="2551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:28 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:30 IST" duration-ms="1971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage(), password=studentpasswod, email=student@student.com, expectedMessage=Invalid credentials}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:30 IST" name="tearDown" finished-at="2024-07-30T11:51:30 IST" duration-ms="302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:30 IST" name="launchapplication" finished-at="2024-07-30T11:51:32 IST" duration-ms="2381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:32 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:35 IST" duration-ms="2984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage(), password=studentpassword, email=educator@student.com, expectedMessage=Invalid credentials}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:35 IST" name="tearDown" finished-at="2024-07-30T11:51:35 IST" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:35 IST" name="launchapplication" finished-at="2024-07-30T11:51:38 IST" duration-ms="2924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:38 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:39 IST" duration-ms="898" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage1(), password=, email=, expectedMessage=Both Email and Password are required}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:39 IST" name="tearDown" finished-at="2024-07-30T11:51:39 IST" duration-ms="255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:39 IST" name="launchapplication" finished-at="2024-07-30T11:51:41 IST" duration-ms="1781" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:41 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:42 IST" duration-ms="1116" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage1(), password=studentpassword, email=, expectedMessage=Both Email and Password are required}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:42 IST" name="tearDown" finished-at="2024-07-30T11:51:43 IST" duration-ms="229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:43 IST" name="launchapplication" finished-at="2024-07-30T11:51:44 IST" duration-ms="1739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:44 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:46 IST" duration-ms="1218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage1(), password=, email=student@student.com, expectedMessage=Both Email and Password are required}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:46 IST" name="tearDown" finished-at="2024-07-30T11:51:46 IST" duration-ms="226" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:46 IST" name="launchapplication" finished-at="2024-07-30T11:51:48 IST" duration-ms="2488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:48 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:50 IST" duration-ms="1793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage(), password=' OR '1'='1, email=student@student.com, expectedMessage=Invalid credentials}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:50 IST" name="tearDown" finished-at="2024-07-30T11:51:50 IST" duration-ms="234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:50 IST" name="launchapplication" finished-at="2024-07-30T11:51:53 IST" duration-ms="2895" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:53 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:55 IST" duration-ms="1986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage(), password=<script>alert('XSS')</script>, email=student@student.com, expectedMessage=Invalid credentials}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:55 IST" name="tearDown" finished-at="2024-07-30T11:51:55 IST" duration-ms="248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:55 IST" name="launchapplication" finished-at="2024-07-30T11:51:58 IST" duration-ms="2099" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method retried="true" signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:58 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:51:59 IST" duration-ms="1451" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=student@studentcom, expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:59 IST" name="tearDown" finished-at="2024-07-30T11:51:59 IST" duration-ms="227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:51:59 IST" name="launchapplication" finished-at="2024-07-30T11:52:01 IST" duration-ms="2029" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:01 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:52:02 IST" duration-ms="1244" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=student@studentcom, expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:03 IST" name="tearDown" finished-at="2024-07-30T11:52:03 IST" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:03 IST" name="launchapplication" finished-at="2024-07-30T11:52:05 IST" duration-ms="2205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method retried="true" signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:05 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:52:07 IST" duration-ms="1615" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=studentstudent.com, expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:07 IST" name="tearDown" finished-at="2024-07-30T11:52:07 IST" duration-ms="175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:07 IST" name="launchapplication" finished-at="2024-07-30T11:52:09 IST" duration-ms="2588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:09 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:52:11 IST" duration-ms="1480" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=studentstudent.com, expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:11 IST" name="tearDown" finished-at="2024-07-30T11:52:11 IST" duration-ms="196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:11 IST" name="launchapplication" finished-at="2024-07-30T11:52:13 IST" duration-ms="1788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method retried="true" signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:13 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:52:14 IST" duration-ms="881" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=                    , email=              , expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:14 IST" name="tearDown" finished-at="2024-07-30T11:52:14 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchapplication()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:14 IST" name="launchapplication" finished-at="2024-07-30T11:52:16 IST" duration-ms="1732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchapplication -->
-        <test-method signature="TestCase_Student(java.util.HashMap)[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:16 IST" name="TestCase_Student" data-provider="getData" finished-at="2024-07-30T11:52:17 IST" duration-ms="1065" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{errorMessageType=loginpage.geterrormessage2(), password=                    , email=              , expectedMessage=Please  a valid Email address}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please  a valid Email address] but found [Please enter a valid Email address]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:840)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCase_Student -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:technosapeince.testcase.TestCase_Student_Login@52c3cb31]" started-at="2024-07-30T11:52:17 IST" name="tearDown" finished-at="2024-07-30T11:52:17 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- technosapeince.testcase.TestCase_Student_Login -->
-    </test> <!-- TC_StudentLogin -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
