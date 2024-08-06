@@ -1,0 +1,93 @@
+[
+    {
+  
+        "email": "institution@institution.com",
+        "password": "institutionpassword",
+        "expectedMessage": "SignIn Success",
+        "errorMessageType": "loginpage.geterrormessage4()"
+    },
+    {
+        
+        "email": "INSTITUTION@INSTITUTION.COM",
+        "password": "institutionpassword",
+        "expectedMessage": "SignIn Success",
+        "errorMessageType": "loginpage.geterrormessage4()"
+    },
+    {
+       
+        "email": "institution@educator.com",
+        "password": "institutionpassword",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+     
+        "email": "institution@institution.com",
+        "password": "institutionpasswd",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        
+        "email": "institution@educator.com",
+        "password": "institutionpassword",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+       
+        "email": "",
+        "password": "",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+        
+        "email": "",
+        "password": "institutionpassword",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+       
+        "email": "institution@educator.com",
+        "password": "",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+        
+        "email": "institution@institution.com",
+        "password": "' OR '1'='1",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+       
+        "email": "institution@institution.com",
+        "password": "<script>alert('XSS')</script>",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+       
+        "email": "institution@institutioncom",
+        "password": "institutionpassword",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    },
+    {
+       
+        "email": "institutioninstitutioncom",
+        "password": "institutionpassword",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    },
+    {
+        
+        "email": "              ",
+        "password": "                    ",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    }
+]

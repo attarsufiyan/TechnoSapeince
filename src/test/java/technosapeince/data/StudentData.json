@@ -1,0 +1,80 @@
+[
+    {
+        "email": "student@student.com",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage4()",
+        "expectedMessage": "Signin Success. Your free trial period has ended"
+    },
+    {
+        "email": "STUDENT@STUDENT.COM",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage4()",
+        "expectedMessage": "Signin Success. Your free trial period has ended"
+    },
+    {
+        "email": "educator@student.com",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage()",
+        "expectedMessage": "Invalid credentials"
+    },
+    {
+        "email": "student@student.com",
+        "password": "studentpasswod",
+        "errorMessageType": "loginpage.geterrormessage()",
+        "expectedMessage": "Invalid credentials"
+    },
+    {
+        "email": "educator@student.com",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage()",
+        "expectedMessage": "Invalid credentials"
+    },
+    {
+        "email": "",
+        "password": "",
+        "errorMessageType": "loginpage.geterrormessage1()",
+        "expectedMessage": "Both Email and Password are required"
+    },
+    {
+        "email": "",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage1()",
+        "expectedMessage": "Both Email and Password are required"
+    },
+    {
+        "email": "student@student.com",
+        "password": "",
+        "errorMessageType": "loginpage.geterrormessage1()",
+        "expectedMessage": "Both Email and Password are required"
+    },
+    {
+        "email": "student@student.com",
+        "password": "' OR '1'='1",
+        "errorMessageType": "loginpage.geterrormessage()",
+        "expectedMessage": "Invalid credentials"
+    },
+    {
+        "email": "student@student.com",
+        "password": "<script>alert('XSS')</script>",
+        "errorMessageType": "loginpage.geterrormessage()",
+        "expectedMessage": "Invalid credentials"
+    },
+    {
+        "email": "student@studentcom",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage2()",
+        "expectedMessage": "Please enter a valid Email address"
+    },
+    {
+        "email": "studentstudent.com",
+        "password": "studentpassword",
+        "errorMessageType": "loginpage.geterrormessage2()",
+        "expectedMessage": "Please enter a valid Email address"
+    },
+    {
+        "email": "              ",
+        "password": "                    ",
+        "errorMessageType": "loginpage.geterrormessage2()",
+        "expectedMessage": "Please enter a valid Email address"
+    }
+]

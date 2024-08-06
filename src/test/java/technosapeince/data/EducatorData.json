@@ -1,0 +1,80 @@
+[
+    {
+        "email": "educator@educator.com",
+        "password": "educatorpassword",
+        "expectedMessage": "Signin Success.",
+        "errorMessageType": "loginpage.geterrormessage4()"
+    },
+    {
+        "email": "EDUCATOR@EDUCATOR.COM",
+        "password": "educatorpassword",
+        "expectedMessage": "Signin Success.",
+        "errorMessageType": "loginpage.geterrormessage4()"
+    },
+    {
+        "email": "educator@student.com",
+        "password": "educatorpassword",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        "email": "educator@educator.com",
+        "password": "educatorpasswd",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        "email": "educator@student.com",
+        "password": "educatorpassword",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        "email": "",
+        "password": "",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+        "email": "",
+        "password": "educatorpassword",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+        "email": "educator@educator.com",
+        "password": "",
+        "expectedMessage": "Both Email and Password are required",
+        "errorMessageType": "loginpage.geterrormessage1()"
+    },
+    {
+        "email": "educator@educator.com",
+        "password": "' OR '1'='1",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        "email": "educator@educator.com",
+        "password": "<script>alert('XSS')</script>",
+        "expectedMessage": "Invalid credentials",
+        "errorMessageType": "loginpage.geterrormessage()"
+    },
+    {
+        "email": "educatro@educatorcom",
+        "password": "educatorpassword",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    },
+    {
+        "email": "educatoreducator.com",
+        "password": "educatorpassword",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    },
+    {
+        "email": "              ",
+        "password": "                    ",
+        "expectedMessage": "Please enter a valid Email address",
+        "errorMessageType": "loginpage.geterrormessage2()"
+    }
+]

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TC_InstitutionLogin</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">58,248</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TC_StudentLogin</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">3</td><td class="num">67,067</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">13</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">5</th><th class="num">125,315</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_InstitutionLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">technosapeince.FreeCourseEnroll</td><td><a href="#m0">courseEnroll</a></td><td rowspan="1">1722320496270</td><td rowspan="1">10122</td></tr><tr class="failedeven"><td><a href="#m1">searchbar</a></td><td rowspan="1">1722320510966</td><td rowspan="1">11344</td></tr><tr><th colspan="4">TC_InstitutionLogin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">technosapeince.FreeCourseEnroll</td><td><a href="#m2">checkenrolledCourse</a></td><td rowspan="1">1722320474585</td><td rowspan="1">3161</td></tr><tr class="passedeven"><td><a href="#m3">courseEnroll</a></td><td rowspan="1">1722320481121</td><td rowspan="1">12234</td></tr><tr class="passedeven"><td><a href="#m4">searchbardisplay</a></td><td rowspan="1">1722320528523</td><td rowspan="1">170</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TC_StudentLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">technosapeince.testcase.TestCase_Student_Login</td><td><a href="#m5">TestCase_Student</a></td><td rowspan="3">1722320521742</td><td rowspan="3">1244</td></tr><tr class="failedeven"><td><a href="#m6">TestCase_Student</a></td></tr><tr class="failedeven"><td><a href="#m7">TestCase_Student</a></td></tr><tr><th colspan="4">TC_StudentLogin &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">technosapeince.testcase.TestCase_Student_Login</td><td><a href="#m8">TestCase_Student</a></td><td rowspan="3">1722320518034</td><td rowspan="3">1451</td></tr><tr class="retriedeven"><td><a href="#m9">TestCase_Student</a></td></tr><tr class="retriedeven"><td><a href="#m10">TestCase_Student</a></td></tr><tr><th colspan="4">TC_StudentLogin &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">technosapeince.testcase.TestCase_Student_Login</td><td><a href="#m11">TestCase_Student</a></td><td rowspan="10">1722320488068</td><td rowspan="10">1971</td></tr><tr class="passedeven"><td><a href="#m12">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m13">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m14">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m15">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m16">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m17">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m18">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m19">TestCase_Student</a></td></tr><tr class="passedeven"><td><a href="#m20">TestCase_Student</a></td></tr></tbody>
+</table>
+<h2>TC_InstitutionLogin</h2><h3 id="m0">technosapeince.FreeCourseEnroll#courseEnroll</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{courseName=IT Support and Networking Essentials | IT Infrastructure, elist=IT Support and Networking Essentials, Category=Information Technology, SubCategory=IT Infrastructure, pwd=studentpassword, email=student@student.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Cancel&apos;]&quot;}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb69357158e0430dea9a0c77685e45bf, findElement {value=//button[text()=&apos;Cancel&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51027/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb69357158e0430dea9a0c77685e45bf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at technosapeince.pageobjects.Homepage.clickCancelButton(Homepage.java:46)
+	at technosapeince.FreeCourseEnroll.courseEnroll(FreeCourseEnroll.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">technosapeince.FreeCourseEnroll#searchbar</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.css-1xvinid&quot;}
+  (Session info: chrome=127.0.6533.73)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [138fc44ef3b64e6476dd9278af23d4c7, findElement {value=.css-1xvinid, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 127.0.6533.72 (9755e24ca85a..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51196/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 138fc44ef3b64e6476dd9278af23d4c7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+	at technosapeince.pageobjects.Homepage.searchbartc_1(Homepage.java:114)
+	at technosapeince.FreeCourseEnroll.searchbar(FreeCourseEnroll.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">technosapeince.FreeCourseEnroll#checkenrolledCourse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">technosapeince.FreeCourseEnroll#courseEnroll</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{courseName=IT Support and Networking Essentials | IT Infrastructure, elist=IT Support and Networking Essentials, Category=Information Technology, SubCategory=IT Infrastructure, pwd=studentpassword, email=student@student.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">technosapeince.FreeCourseEnroll#searchbardisplay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_StudentLogin</h2><h3 id="m5">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=student@studentcom, expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=studentstudent.com, expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=                    , email=              , expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=student@studentcom, expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=studentpassword, email=studentstudent.com, expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage2(), password=                    , email=              , expectedMessage=Please  a valid Email address}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please  a valid Email address] but found [Please enter a valid Email address]
+	at technosapeince.testcase.TestCase_Student_Login.TestCase_Student(TestCase_Student_Login.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage(), password=studentpasswod, email=student@student.com, expectedMessage=Invalid credentials}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage(), password=&apos; OR &apos;1&apos;=&apos;1, email=student@student.com, expectedMessage=Invalid credentials}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage(), password=studentpassword, email=educator@student.com, expectedMessage=Invalid credentials}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage1(), password=studentpassword, email=, expectedMessage=Both Email and Password are required}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage(), password=&lt;script&gt;alert(&apos;XSS&apos;)&lt;/script&gt;, email=student@student.com, expectedMessage=Invalid credentials}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage4(), password=studentpassword, email=STUDENT@STUDENT.COM, expectedMessage=Signin Success. Your free trial period has ended}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage(), password=studentpassword, email=educator@student.com, expectedMessage=Invalid credentials}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage1(), password=, email=student@student.com, expectedMessage=Both Email and Password are required}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage4(), password=studentpassword, email=student@student.com, expectedMessage=Signin Success. Your free trial period has ended}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">technosapeince.testcase.TestCase_Student_Login#TestCase_Student</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{errorMessageType=loginpage.geterrormessage1(), password=, email=, expectedMessage=Both Email and Password are required}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
