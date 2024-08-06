@@ -29,11 +29,15 @@ public class LearnCourse extends AbstractComponents {
 	
 	@FindBy(css=".plyr__control--overlaid")
 	WebElement play;
+	
+	@FindBy(css = ".css-1y1k3rb")
+	WebElement studentmenu;
 
 	By volumebutton = By.cssSelector(".plyr__control--pressed");
 	
 	By playbutton = By.cssSelector(".plyr__control--overlaid");
 
+	
 //-----------------------------------------------------------//
 
 	

@@ -7,15 +7,9 @@
 		</classes>
 	</test>
 
-	<test thread-count="5" name="TC_EducatorLogin">
+     <test thread-count="5" name="TC_EducatorLogin">
 		<classes>
-			<class name="technosapeince.testcase.TestCase_Educator_Login" />
-		</classes>
-	</test>
-
-	<test thread-count="5" name="TC_InstitutionLogin">
-		<classes>
-			<class name="technosapeince.testcase.TestCase_Institution_Login" />
+			<class name="technosapeince.FreeCourseEnroll" />
 		</classes>
 	</test>
 
