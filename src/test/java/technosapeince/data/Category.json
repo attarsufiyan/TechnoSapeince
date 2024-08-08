@@ -17,16 +17,8 @@
 		  "email": "student@student.com",
 		  "pwd": "studentpassword"
 
- },
- 
- {
-          "Category": "Information Technology",
-		  "SubCategory": "IT Infrastructure",
-		  "courseName": "Fundamentals of IT Networking | IT Infrastructure",
-		  "elist": "IT Support and Networking Essentials",
-		  "email": "student@student.com",
-		  "pwd": "studentpassword"
-
  }
+ 
+
  
   ]
