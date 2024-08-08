@@ -7,7 +7,7 @@
         <methods>
           <include name="launchapplication"/>
           <include name="tearDown"/>
-          <include name="courseEnroll" invocation-numbers="0 1"/>
+          <include name="courseEnroll" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- technosapeince.FreeCourseEnroll -->
     </classes>
