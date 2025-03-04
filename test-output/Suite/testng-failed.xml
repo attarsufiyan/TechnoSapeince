@@ -2,26 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="TC_EducatorLogin(failed)">
+    <groups>
+      <run>
+        <include name="ErrorValidation"/>
+      </run>
+    </groups>
     <classes>
       <class name="technosapeince.FreeCourseEnroll">
         <methods>
-          <include name="launchapplication"/>
           <include name="tearDown"/>
-          <include name="courseEnroll" invocation-numbers="0 1 2"/>
+          <include name="launchapplication"/>
           <include name="searchbar"/>
         </methods>
       </class> <!-- technosapeince.FreeCourseEnroll -->
     </classes>
   </test> <!-- TC_EducatorLogin(failed) -->
-  <test thread-count="5" parallel="tests" name="TC_StudentLogin(failed)">
-    <classes>
-      <class name="technosapeince.testcase.TestCase_Student_Login">
-        <methods>
-          <include name="launchapplication"/>
-          <include name="tearDown"/>
-          <include name="TestCase_Student" invocation-numbers="9"/>
-        </methods>
-      </class> <!-- technosapeince.testcase.TestCase_Student_Login -->
-    </classes>
-  </test> <!-- TC_StudentLogin(failed) -->
 </suite> <!-- Failed suite [Suite] -->

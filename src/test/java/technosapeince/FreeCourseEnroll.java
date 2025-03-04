@@ -93,6 +93,7 @@ public class FreeCourseEnroll extends BaseTest {
 	}
 
 	public void educatorprofile() {
+		
 
 	}
 
